@@ -85,7 +85,7 @@
 
         .small-text {
             font-size: 0.75rem;
-            color: color-mix(in srgb, var(--color-text-dark) 70%, transparent);
+            color: var(--color-text-dark);
         }
 
         /* Color Palette Section */
@@ -136,7 +136,8 @@
         }
 
         .link:hover {
-            color: var(--color-accent);
+            .link:hover {
+             color: var(--color-primary);
             text-decoration: underline;
             text-decoration-color: var(--color-highlight);
         }
@@ -195,8 +196,8 @@
                     <p>#5e6aa2</p>
                     <small>Contrast Ratio: 5.17:1</small>
                 </div>
-                <div class="color-swatch" style="background-color: var(--color-primary); color: var(--color-primary);"
-                    <strong>Accent Color</strong>
+                <div class="color-swatch" style="background-color: var(--color-accent); color: var(--color-primary);">
+                     <strong>Accent Color</strong>
                     <p>#8bc3ef</p>
                     <small>Contrast Ratio: 9.36:1</small>
                 </div>
@@ -213,8 +214,8 @@
             </div>
         </section>
 
-        <section>
-    <h2>Typography</h2>
+       <section id="color-palette">
+    <h2>Color Palette</h2>
     <h1>Heading 1 — Bahnschrift</h1>
     <h2>Heading 2 — Bahnschrift</h2>
     <h3>Heading 3 — Museo Slab</h3>
@@ -222,7 +223,7 @@
     <p class="small-text">Small text is used for short notes and labels.</p>
 </section>
 
-<section>
+<section id="spacing">
     <h2>Spacing System</h2>
     <p>My spacing values are based on multiples of 4 and 8 pixels.</p>
     <div class="spacing-demo">
