@@ -22,7 +22,7 @@
 
             /* Typography */
             --font-primary: 'bahnschrift', sans-serif;
-            --font-secondary: font-family: "museo-slab", serif;
+            --font-secondary: "museo-slab", serif;
 
             /* Spacing System */
             --spacing-xs: 0.25rem;
@@ -72,12 +72,12 @@
         }
 
         h3 {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: var(--spacing-sm);
-            color: var(--color-accent);
+             font-family: var(--font-secondary);
+             font-size: 1.5rem;
+             font-weight: 500;
+             margin-bottom: var(--spacing-sm);
+             color: var(--color-primary);
         }
-
         .body-text {
             font-size: 1rem;
             margin-bottom: var(--spacing-md);
@@ -157,6 +157,24 @@
             background-color: var(--color-primary);
             height: 50px;
         }
+         .button:focus-visible,
+    .link:focus-visible,
+    .text-input:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+.text-input {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    font: inherit;
+    color: var(--color-primary);
+    background-color: white;
+    border: 2px solid var(--color-neutral);
+    border-radius: var(--radius-sm);
+}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -170,58 +188,75 @@
                 <div class="color-swatch" style="background-color: var(--color-primary); color: var(--color-text-light);">
                     <strong>Primary Color</strong>
                     <p>#19181e</p>
-                    <small>Contrast Ratio: 4.6:1</small>
+                    <small>Contrast Ratio: 17.64:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-secondary); color: var(--color-text-light);">
                     <strong>Secondary Color</strong>
                     <p>#5e6aa2</p>
-                    <small>Contrast Ratio: 4.8:1</small>
+                    <small>Contrast Ratio: 5.17:1</small>
                 </div>
-                <div class="color-swatch" style="background-color: var(--color-accent); color: var(--color-text-light);">
+                <div class="color-swatch" style="background-color: var(--color-primary); color: var(--color-primary);"
                     <strong>Accent Color</strong>
                     <p>#8bc3ef</p>
-                    <small>Contrast Ratio: 4.5:1</small>
+                    <small>Contrast Ratio: 9.36:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-neutral); color: var(--color-text-light);">
                     <strong>Neutral Color</strong>
-                    <p>#c4bbc5e</p>
-                    <small>Contrast Ratio: 4.7:1</small>
+                    <p>#635c63</p>
+                    <small>Contrast Ratio: 6.48:1</small>
                 </div>
-                <div class="color-swatch" style="background-color: var(--color-highlight); color: var(--color-text-dark);">
+                <div class="color-swatch" style="background-color: var(--color-highlight); color: var(--color-primary);">
                     <strong>Highlight Color</strong>
                     <p>#fce307</p>
-                    <small>Contrast Ratio: 4.9:1</small>
+                    <small>Contrast Ratio: 13.55:1</small>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Typography</h2>
-            <h1>Heading 1 - Space Grotesk</h1>
-            <h2>Heading 2 - Space Grotesk</h2>
-            <h3>Heading 3 - Space Grotesk</h3>
-            <p class="body-text">Body Text - Using Space Grotesk with a comfortable line height and readable size.</p>
-            <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
-        </section>
+    <h2>Typography</h2>
+    <h1>Heading 1 — Bahnschrift</h1>
+    <h2>Heading 2 — Bahnschrift</h2>
+    <h3>Heading 3 — Museo Slab</h3>
+    <p class="body-text">Body text uses Bahnschrift at a readable size and line height.</p>
+    <p class="small-text">Small text is used for short notes and labels.</p>
+</section>
 
-        <section>
-            <h2>Spacing System</h2>
-            <div class="spacing-demo">
-                <div class="spacing-block" style="width: var(--spacing-xs)"></div>
-                <div class="spacing-block" style="width: var(--spacing-sm)"></div>
-                <div class="spacing-block" style="width: var(--spacing-md)"></div>
-                <div class="spacing-block" style="width: var(--spacing-lg)"></div>
-                <div class="spacing-block" style="width: var(--spacing-xl)"></div>
-            </div>
-            <p>Spacing blocks demonstrating size variations from xs to xl</p>
-        </section>
+<section>
+    <h2>Spacing System</h2>
+    <p>My spacing values are based on multiples of 4 and 8 pixels.</p>
+    <div class="spacing-demo">
+        <span>XS: 4px</span>
+        <div class="spacing-block" style="width: var(--spacing-xs)"></div>
+    </div>
+    <div class="spacing-demo">
+        <span>SM: 8px</span>
+        <div class="spacing-block" style="width: var(--spacing-sm)"></div>
+    </div>
+    <div class="spacing-demo">
+        <span>MD: 16px</span>
+        <div class="spacing-block" style="width: var(--spacing-md)"></div>
+    </div>
+    <div class="spacing-demo">
+        <span>LG: 24px</span>
+        <div class="spacing-block" style="width: var(--spacing-lg)"></div>
+    </div>
+    <div class="spacing-demo">
+        <span>XL: 32px</span>
+        <div class="spacing-block" style="width: var(--spacing-xl)"></div>
+    </div>
+</section>
 
-        <section>
-            <h2>Interactive Components</h2>
-            <a href="#" class="button">Primary Button</a>
-            <a href="#" class="link">Standard Link</a>
-            <a href="#" class="link" style="color: purple;">Visited Link</a>
-        </section>
+<section>
+    <h2>Interactive Components</h2>
+    <p><a href="#color-palette" class="button">See Colors</a></p>
+    <p><a href="#typography" class="link">Standard Link</a></p>
+    <p><a href="#spacing" class="link">Spacing Section</a></p>
+
+    <label for="sample-name">text input</label>
+    <input class="text-input" type="text" id="sample-name"
+           name="sample-name" placeholder="Type your name">
+</section>
     </div>
 </body>
 </html>
