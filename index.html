@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Student redesign of the ATLAS BTU Lab website">
     <title>Home | BTU Lab Redesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
-        <p><strong>ATLAS | BTU Lab</strong></p>
+        <p class="brand">BTU</p>
         <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
@@ -22,9 +26,18 @@
     </header>
 
 <main>
-    <h1>BLOW. THINGS. UP.</h1>
+    <div class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> THE ATLAS MAKERSPACE · BOULDER, CO</p>
+    <h1>BLOW.<br>THINGS.<br><em>UP.</em></h1>
+        <p class="hero-description">A place to experiment, build, break things, and make something extraordinary.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="access.html">GET ACCESS <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="making.html">EXPLORE THE LAB <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-star">✳</div><span class="art-label">MAKE / EXPERIMENT / REPEAT</span></div>
+    </div>
+    <div class="content-wrap"><p class="section-kicker">01 / ABOUT THE LAB</p>
 
-    <section aria-labelledby="intro">
+    <section class="intro-section" aria-labelledby="intro">
         <h2 id="intro">An inclusive community makerspace</h2>
         <p>The ATLAS BTU Lab facilitates projects at the intersection of 
         art, design, engineering and architecture. It serves as a general
@@ -32,7 +45,8 @@
         </p>
     </section>
 
-    <section aria-labelledby="who">
+    <div class="info-grid">
+    <section class="info-card" aria-labelledby="who">
         <h2 id="who">Who can use BTU?</h2>
         <p>Anyone can gain 
         access to BTU, although the lab currently cannot sponsor BuffOne Guest cards 
@@ -40,7 +54,7 @@
         </p>
     </section>
 
-    <section aria-labelledby="how">
+    <section class="info-card" aria-labelledby="how">
         <h2 id="how">How do I get access?</h2>
         <p>
             New members attend a 20-minute general orientation covering community expectations, 
@@ -51,20 +65,22 @@
         </p>
     </section>
 
-    <section aria-labelledby="where">
+    <section class="info-card" aria-labelledby="where">
         <h2 id="where">Where is BTU?</h2>
         <address>320 UCB<br>1125 18th St<br>Boulder, CO 80309</address>
         <p>Questions: <a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a>
         </p>
     </section>
 
-    <aside aria-labelledby="materials">
+    </div>
+    <aside class="materials-card" aria-labelledby="materials">
         <h2 id="materials">Materials and reciprocity</h2>
         <p>BTU is not a free supply store. The lab encourages reciprocity through displaying 
         work, tagging BTU on social media, offering workshops, helping organize supplies 
         and other contributions to the community.
         </p>
     </aside>
+</div>
 </main>
 
     <footer>
