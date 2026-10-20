@@ -1,42 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools & Making</title>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Student redesign of the ATLAS BTU Lab website">
+    <title>Home | BTU Lab Redesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="community.css">
 </head>
-
+<style>
+    .intro-section strong{
+        color: green;
+    }
+</style>
 <body>
-        <header>
-        <p><strong>ATLAS | BTU Lab</strong></p>
+    <header>
+        <p class="brand">BTU</p>
         <nav aria-label="Primary navigation"><ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="access.html">Access & Calendar</a></li>
-            <li><a href="making.html">Tools & Making</a></li>
+            <li><a href="making.html" aria-current="page">Tools & Making</a></li>
             <li><a href="people.html">Mischief Makers</a></li>
             <li><a href="community.html">Rules & Community</a></li>
-            <li><a href="faculty.html" aria-current="page">Faculty</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
         </ul></nav></header>
     
-    <main>
-        <section>
+    <main class="content-wrap">
+        <section class="intro-section">
         <h1>Tools</h1>
+        <div>
         <p>General Tools equipment and materials are labeled <strong>GREEN</strong></p>
         <p>Power tools, mostly used in the Wood Shop, are more like... <strong>GREEN</strong>!</p>
+        </div>
         </section>
 
-        <section>
+        <article>
             <h2>The Tools and the talent...</h2>
             <p>BTU Lab keeps lots of general tools on hand for all your inventing needs.</p>
             <p>We can accommodate dozens of people at once and are working on increasing project storage space. Yay!</p>
-        </section>
+        </article>
 
-        <section>
+        <article class="materials-card">
             <p>Materials: <strong>BTU LAB IS NOT A FREE SUPPLY STORE.</strong> But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.</p>
-        </section>
+        </article>
 
         <section>
-            <h3>General Equipment</h3>
+            <h2>General Equipment</h2>
+        <article>
             <ul>
                 <li>Knives (yes!)</li>
                 <li>Cutting Mats</li>
@@ -46,6 +57,11 @@
                 <li>Various Screwdrivers</li>
                 <li>Zip Ties*</li>
                 <li>Plywoods* (laser safe)</li>
+            </ul>
+        </article>
+
+        <article>
+            <ul>
                 <li>Hot Glue Guns*</li>
                 <li>Various Tapes*</li>
                 <li>Dremel Tools</li>
@@ -54,6 +70,11 @@
                 <li>2D Craft Supplies</li>
                 <li>3D Craft Supplies</li>
                 <li>Plastics* (laser safe)</li>
+            </ul>
+        </article>
+        
+        <article>
+            <ul>
                 <li>Various Fasteners</li>
                 <li>Sandpaper*</li>
                 <li>Sanding Tools</li>
@@ -63,27 +84,16 @@
                 <li>Various Fabrics</li>
                 <li>... and MORE!</li>
             </ul>
+        </article>
         </section>
 
-        <section>
-            <h2>Making</h2>
+            <h2>Making</h2>  
+        
             <article>
                 <h3>Wood Shop</h3>
                 <p>The WOOD SHOP entrance is marked PINK. Inside, tools have their own color-coding system. You'll figure it out.</p>
-            </article>
-            <article>
-                <p>Access to certain machines is facilitated by BTU “Mischief Makers". Anyone can become a "Mischief Maker" on any machine.</p>
-                <p>*WOOD SHOP access is separate from general BTU access and REQUIRES AN ORIENTATION.*</p>
-                <p>**FOR YOUR SAFETY, major equipment including table saw, band saw, belt sander, chop saw, and drill press are powered off between the hours of 10pm and 6am, daily.</p>
-            </article>
-            <article>
-                <h3>Wood Shop Orientations</h3>
-                <h4>REGISTRATION IS REQUIRED! LINK ON THE <a href="access.html">CALENDAR.</a></h4>
-                <p>Orientations are run by the BTU Mischief Maker(s) listed on the <a href="mischief-makers.html">BTU Mischief Maker page</a>.</p>
-            </article>
-
-            <article>
-                <p>WOOD SHOP EQUIPMENT</p>
+                
+                <h3>WOOD SHOP EQUIPMENT</h3>
                 <ul>
                     <li>Table Saw</li>
                     <li>Band Saw</li>
@@ -97,8 +107,15 @@
                     <li>Planer</li>
                 </ul>
             </article>
+            <h2>Wood Shop Orientations</h2>
             <article>
-                <p>BTU Wood Shop Policies</p>
+                <h4>REGISTRATION IS REQUIRED! LINK ON THE <a href="access.html">CALENDAR.</a></h4>
+                <p>Orientations are run by the BTU Mischief Maker(s) listed on the <a href="mischief-makers.html">BTU Mischief Maker page</a>.</p>
+                <p>Access to certain machines is facilitated by BTU “Mischief Makers". Anyone can become a "Mischief Maker" on any machine.</p>
+            </article>
+
+            <article>
+                <h3>BTU Wood Shop Policies</h3>
                 <p><strong>FOR YOUR SAFETY, major equipment including table saw, band saw, belt sander, chop saw, and drill press are powered off between the hours of 10pm and 6am, daily.</strong></p>
                 <p>Violation of any wood shop policy may result in loss of access to the wood shop and/or BTU Lab.</p>
                 <ul>
@@ -109,7 +126,15 @@
                     <li>Users are responsible for cleaning up their work area and returning tools to their proper place after use.</li>
                 </ul>
             </article>
-        </section>
+
     </main>
+
+    <footer>
+         <p><strong>Class redesign project:</strong> This student website reorganizes 
+        content from the real BTU Lab for a semantic HTML assignment. It is not the 
+        official BTU Lab or University of Colorado Boulder website.
+        </p>
+        <p><a href="https://sites.google.com/view/btu-lab/home">Official BTU Lab website</a></p>
+    </footer>
 </body>
 </html>

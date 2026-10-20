@@ -32,6 +32,12 @@ main article p {
     overflow-wrap: anywhere;
 }
 
+main article li {
+    color: #62616d;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
 main article img {
     max-width: 100%;
     height: auto;
