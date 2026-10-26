@@ -20,3 +20,41 @@ main iframe {
 main a {
     color: #485789;
 }
+.lab-sections {
+    margin-top: 45px;
+}
+
+.lab-sections details {
+    margin-bottom: 12px;
+    background: white;
+    border: 1px solid #e7e7eb;
+    border-radius: 8px;
+}
+
+.lab-sections summary {
+    padding: 18px;
+    background: #e8edf7;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.lab-sections summary:hover {
+    background: #dce4f4;
+}
+
+.lab-sections summary:focus-visible {
+    outline: 3px solid #5e6aa2;
+    outline-offset: 3px;
+}
+
+.lab-sections details[open] summary {
+    border-bottom: 1px solid #e7e7eb;
+    border-radius: 8px 8px 0 0;
+}
+
+.lab-sections .details-content {
+    padding: 5px 20px 20px;
+    overflow-wrap: anywhere;
+}
