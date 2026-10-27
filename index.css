@@ -275,19 +275,10 @@ nav a[aria-current] {
 }
 
 .info-card:before {
-    content: '✳';
     color:var(--color-secondary);
     font-size: 25px;
     display: block;
     margin-bottom: 24px;
-}
-
-.info-card:nth-child(2):before {
-    content: '↗';
-}
-
-.info-card:nth-child(3):before {
-    content: '⌖';
 }
 
 .info-card h2 {
